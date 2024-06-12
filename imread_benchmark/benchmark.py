@@ -293,8 +293,8 @@ def parse_args():
     return parser.parse_args()
 
 
-def get_image_paths(data_dir: str | Path, num_images: int) -> list:
-    image_paths = sorted(Path(data_dir).glob("*.*"))
+def get_image_paths(data_dir: str, num_images: int) -> list:
+    image_paths = sorted(Path(data_dir).glob("*.jpg"))
     return [str(x) for x in image_paths[:num_images]]
 
 

@@ -26,7 +26,7 @@ def create_plot(df_path, output_path):
     y_positions = [p.get_y() + p.get_height() / 2 for p in barplot.patches]
     error_values = df_sorted["Std Dev"].to_numpy()
 
-    for y_pos, x_val, error_val in zip(y_positions, df_sorted["Mean Performance"], error_values, strict=False):
+    for y_pos, x_val, error_val in zip(y_positions, df_sorted["Mean Performance"], error_values):
         plt.errorbar(
             x=x_val,
             y=y_pos,
