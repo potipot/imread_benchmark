@@ -13,5 +13,6 @@ scikit-image
 tensorflow
 torchvision
 tqdm
+fire
 tabulate
 seaborn
